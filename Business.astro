@@ -1,0 +1,344 @@
+---
+---
+
+<section class="section" id="business">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__label mono accent">→ Business</p>
+      <h2 class="section__title">
+        Scale your business<br><em>with ruthless systems.</em>
+      </h2>
+      <p class="section__sub">
+        Four tools. Zero fluff. Built by someone who actually uses them.
+      </p>
+    </div>
+
+    <div class="products">
+      <!-- Product 01 -->
+      <div class="product" id="database">
+        <div class="product__meta">
+          <span class="product__num mono">01 / 04</span>
+          <span class="product__badge">Data</span>
+        </div>
+        <div class="product__body">
+          <h3 class="product__title">The Global Bike Store Database</h3>
+          <p class="product__desc">
+            15,000 verified cycling stores across the globe — curated, enriched, and 
+            ready to deploy. The gold standard for any cycling brand that's serious 
+            about market intelligence.
+          </p>
+          <ul class="product__features">
+            <li>Store name, address, country, and contact data</li>
+            <li>Category segmentation (MTB, Road, Urban, Multi)</li>
+            <li>Ready for CRM import or outreach automation</li>
+          </ul>
+          <a href="#newsletter" class="product__cta">Get access →</a>
+        </div>
+        <div class="product__side">
+          <div class="product__stat-big">
+            <span class="product__stat-num">15K</span>
+            <span class="product__stat-label mono">stores indexed</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 02 -->
+      <div class="product" id="templates">
+        <div class="product__meta">
+          <span class="product__num mono">02 / 04</span>
+          <span class="product__badge product__badge--new">Templates</span>
+        </div>
+        <div class="product__body">
+          <h3 class="product__title">Agentic AI & Scraping Templates</h3>
+          <p class="product__desc">
+            The exact automation stack I use to prospect, enrich, and qualify leads 
+            while I sleep. No-code friendly, but powerful enough for engineers.
+          </p>
+          <ul class="product__features">
+            <li>AI-powered lead discovery workflows</li>
+            <li>Web scraping pipelines with enrichment</li>
+            <li>Plug-and-play for any niche or market</li>
+          </ul>
+          <a href="#newsletter" class="product__cta">Download free →</a>
+        </div>
+        <div class="product__side">
+          <div class="product__visual">
+            <div class="product__code">
+              <span style="color:var(--accent)">agent</span>.run(<br>
+              &nbsp;&nbsp;<span style="color:var(--gray-300)">"find leads"</span>,<br>
+              &nbsp;&nbsp;&#123; sleep: <span style="color:var(--accent)">true</span> &#125;<br>
+              )
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 03 -->
+      <div class="product" id="coda">
+        <div class="product__meta">
+          <span class="product__num mono">03 / 04</span>
+          <span class="product__badge">Free</span>
+        </div>
+        <div class="product__body">
+          <h3 class="product__title">Coda Personal Brand Frameworks</h3>
+          <p class="product__desc">
+            Stop winging your content. These Coda templates turn your scattered 
+            expertise into a structured authority engine — content calendar, 
+            positioning map, and audience tracker included.
+          </p>
+          <ul class="product__features">
+            <li>Content calendar with topic clusters</li>
+            <li>Personal brand positioning map</li>
+            <li>Audience & email list tracker</li>
+          </ul>
+          <a href="#newsletter" class="product__cta">Get for free →</a>
+        </div>
+        <div class="product__side">
+          <div class="product__stat-big">
+            <span class="product__stat-num">Free</span>
+            <span class="product__stat-label mono">always</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 04 -->
+      <div class="product product--featured" id="masterclass">
+        <div class="product__meta">
+          <span class="product__num mono">04 / 04</span>
+          <span class="product__badge product__badge--featured">Course</span>
+        </div>
+        <div class="product__body">
+          <h3 class="product__title">The Systems Masterclass</h3>
+          <p class="product__desc">
+            Build your Business OS from scratch. CRM, performance tracking, 
+            content engine, lead pipeline — every system you need to scale 
+            without hiring an army.
+          </p>
+          <ul class="product__features">
+            <li>12 modules, 40+ step-by-step lessons</li>
+            <li>From zero to full Business OS in 30 days</li>
+            <li>Lifetime access + future updates</li>
+          </ul>
+          <a href="#newsletter" class="product__cta product__cta--featured">Join waitlist →</a>
+        </div>
+        <div class="product__side">
+          <div class="product__stat-big">
+            <span class="product__stat-num">30d</span>
+            <span class="product__stat-label mono">to your Business OS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.section {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--gray-800);
+}
+
+.section__header {
+  max-width: 680px;
+  margin-bottom: 60px;
+}
+
+.section__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.section__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.section__sub {
+  font-size: 0.95rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  gap: 40px;
+  align-items: start;
+  padding: 40px;
+  background: var(--gray-900);
+  border: 1px solid var(--gray-800);
+  transition: border-color 0.2s;
+}
+
+.product:hover {
+  border-color: var(--gray-600);
+}
+
+.product--featured {
+  border-color: rgba(200, 255, 0, 0.2);
+  background: linear-gradient(135deg, rgba(200, 255, 0, 0.03) 0%, var(--gray-900) 60%);
+}
+
+.product--featured:hover {
+  border-color: rgba(200, 255, 0, 0.5);
+}
+
+.product__num {
+  font-size: 0.65rem;
+  color: var(--gray-600);
+  letter-spacing: 0.08em;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product__badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-400);
+}
+
+.product__badge--new { border-color: var(--accent); color: var(--accent); }
+.product__badge--featured { border-color: var(--accent); color: var(--black); background: var(--accent); }
+
+.product__title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+  font-weight: 400;
+  color: var(--white);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.product__desc {
+  font-size: 0.9rem;
+  color: var(--gray-300);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.product__features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.product__features li {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--gray-400);
+  padding-left: 16px;
+  position: relative;
+}
+
+.product__features li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  font-size: 0.4rem;
+  color: var(--accent);
+  top: 2px;
+}
+
+.product__cta {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 2px;
+  transition: gap 0.2s;
+  gap: 0;
+}
+
+.product__cta:hover {
+  gap: 8px;
+}
+
+.product__cta--featured {
+  background: var(--accent);
+  color: var(--black);
+  padding: 10px 20px;
+  border: none;
+}
+
+.product__cta--featured:hover {
+  background: var(--white);
+}
+
+.product__side {
+  text-align: right;
+}
+
+.product__stat-big {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.product__stat-num {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--white);
+}
+
+.product__stat-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+}
+
+.product__visual {
+  background: var(--gray-800);
+  border: 1px solid var(--gray-700);
+  padding: 16px 20px;
+  border-radius: 2px;
+}
+
+.product__code {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+  white-space: pre;
+}
+
+@media (max-width: 900px) {
+  .product {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .product__side { text-align: left; }
+  .product__stat-big { align-items: flex-start; }
+}
+</style>
