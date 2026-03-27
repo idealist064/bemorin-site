@@ -1,0 +1,150 @@
+---
+---
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <span class="footer__logo">BM</span>
+        <p class="footer__tagline">Build the systems<br>to fuel your dreams.</p>
+      </div>
+
+      <div class="footer__links-group">
+        <p class="footer__group-label mono">Business</p>
+        <a href="#database">Bike Store Database</a>
+        <a href="#templates">AI Templates</a>
+        <a href="#coda">Coda Frameworks</a>
+        <a href="#masterclass">Systems Masterclass</a>
+      </div>
+
+      <div class="footer__links-group">
+        <p class="footer__group-label mono">Life</p>
+        <a href="#calendar">Big Ass Calendar</a>
+        <a href="#resilience">Resilience Challenges</a>
+        <a href="#kikiyomi">Kikiyomi Method</a>
+        <a href="#books">Books & Scripts</a>
+      </div>
+
+      <div class="footer__links-group">
+        <p class="footer__group-label mono">Connect</p>
+        <a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="mono footer__copy">© 2025 Ben Morin · bemorin.com</p>
+      <div class="footer__bottom-links">
+        <a href="#" class="mono">Privacy</a>
+        <a href="#" class="mono">Terms</a>
+      </div>
+      <p class="footer__made mono">Made with intent.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.footer {
+  border-top: 1px solid var(--gray-800);
+  padding: 80px 0 40px;
+  background: var(--gray-900);
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--gray-800);
+}
+
+.footer__logo {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--white);
+  display: block;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+}
+
+.footer__tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--gray-400);
+  line-height: 1.4;
+}
+
+.footer__group-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 20px;
+}
+
+.footer__links-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__links-group a {
+  font-size: 0.875rem;
+  color: var(--gray-400);
+  transition: color 0.2s;
+}
+
+.footer__links-group a:hover {
+  color: var(--white);
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer__copy {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-600);
+  text-transform: uppercase;
+}
+
+.footer__bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer__bottom-links a {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-600);
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.footer__bottom-links a:hover {
+  color: var(--white);
+}
+
+.footer__made {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  color: var(--gray-700);
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .footer__top { grid-template-columns: 1fr 1fr; gap: 40px; }
+}
+
+@media (max-width: 560px) {
+  .footer__top { grid-template-columns: 1fr; }
+}
+</style>

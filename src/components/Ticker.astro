@@ -1,0 +1,71 @@
+---
+---
+
+<div class="ticker">
+  <div class="ticker__track">
+    <span class="ticker__item">Systems Builder</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Data Architect</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Ultra Cyclist</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">15K Bike Stores</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Stoic Practitioner</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">We Ride For Smiles</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Active Nihilist</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Deep Work</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Systems Builder</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Data Architect</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Ultra Cyclist</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">15K Bike Stores</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Stoic Practitioner</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">We Ride For Smiles</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Active Nihilist</span>
+    <span class="ticker__sep">◆</span>
+    <span class="ticker__item">Deep Work</span>
+    <span class="ticker__sep">◆</span>
+  </div>
+</div>
+
+<style>
+.ticker {
+  overflow: hidden;
+  border-top: 1px solid var(--gray-800);
+  border-bottom: 1px solid var(--gray-800);
+  background: var(--gray-900);
+  padding: 14px 0;
+}
+
+.ticker__track {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  white-space: nowrap;
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.ticker__item {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.ticker__sep {
+  color: var(--accent);
+  font-size: 0.5rem;
+}
+</style>

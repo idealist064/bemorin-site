@@ -1,0 +1,238 @@
+---
+---
+
+<section class="about" id="about">
+  <div class="container about__inner">
+    <div class="about__left">
+      <p class="about__label mono accent">→ About</p>
+      <h2 class="about__title">
+        I don't teach<br>
+        <em>what I haven't</em><br>
+        done myself.
+      </h2>
+      <div class="about__divider"></div>
+      <p class="about__text">
+        I built the world's largest cycling brand database from scratch — 15,000 stores, 
+        zero budget, pure systems thinking. While training for a 1,500km raid across 
+        multiple countries.
+      </p>
+      <p class="about__text">
+        Everything I share is field-tested. The Big Ass Calendar isn't theory — it's 
+        how I run 5 active projects while logging serious kilometers in the saddle. 
+        The AI templates aren't demos — they're the actual pipelines generating leads 
+        while I sleep.
+      </p>
+      <p class="about__text">
+        My philosophy is simple: <strong>systems compound</strong>. The right structure 
+        in your business or your life creates leverage that turns average effort into 
+        extraordinary results.
+      </p>
+      <div class="about__tags">
+        <span class="about__tag">Logotherapy</span>
+        <span class="about__tag">Active Nihilism</span>
+        <span class="about__tag">Agentic AI</span>
+        <span class="about__tag">We Ride For Smiles</span>
+        <span class="about__tag">Stoicism</span>
+        <span class="about__tag">Deep Work</span>
+      </div>
+    </div>
+
+    <div class="about__right">
+      <div class="about__card">
+        <div class="about__card-header">
+          <span class="mono" style="font-size:0.65rem;letter-spacing:0.12em;color:var(--gray-400);text-transform:uppercase;">Current stack</span>
+        </div>
+        <div class="about__stack">
+          <div class="about__stack-item">
+            <span class="about__stack-dot"></span>
+            <div>
+              <div class="about__stack-name">The Bike Database</div>
+              <div class="about__stack-desc">15K global cycling stores</div>
+            </div>
+          </div>
+          <div class="about__stack-item">
+            <span class="about__stack-dot"></span>
+            <div>
+              <div class="about__stack-name">We Ride For Smiles</div>
+              <div class="about__stack-desc">Charity ultra-cycling raid</div>
+            </div>
+          </div>
+          <div class="about__stack-item">
+            <span class="about__stack-dot"></span>
+            <div>
+              <div class="about__stack-name">AI Lead Gen Templates</div>
+              <div class="about__stack-desc">Agentic scraping systems</div>
+            </div>
+          </div>
+          <div class="about__stack-item">
+            <span class="about__stack-dot"></span>
+            <div>
+              <div class="about__stack-name">Systems Masterclass</div>
+              <div class="about__stack-desc">Business OS course</div>
+            </div>
+          </div>
+          <div class="about__stack-item">
+            <span class="about__stack-dot"></span>
+            <div>
+              <div class="about__stack-name">Kikiyomi Method</div>
+              <div class="about__stack-desc">Language immersion system</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__proof">
+        <div class="about__proof-item">
+          <div class="about__proof-line"></div>
+          <p class="mono" style="font-size:0.7rem;color:var(--gray-400);letter-spacing:0.08em;">
+            "The only way to do great work is to build the infrastructure that makes great work inevitable."
+          </p>
+          <span class="mono" style="font-size:0.65rem;color:var(--accent);">— BM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.about {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--gray-800);
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: start;
+}
+
+.about__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.about__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+}
+
+.about__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.about__divider {
+  width: 48px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 28px;
+  transform-origin: left;
+  animation: slideRight 0.8s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.about__text {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.about__text strong {
+  color: var(--white);
+  font-weight: 500;
+}
+
+.about__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 32px;
+}
+
+.about__tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border: 1px solid var(--gray-700);
+  color: var(--gray-400);
+}
+
+.about__card {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-700);
+  padding: 32px;
+  margin-bottom: 20px;
+}
+
+.about__card-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-800);
+  margin-bottom: 24px;
+}
+
+.about__stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about__stack-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.about__stack-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.about__stack-name {
+  font-size: 0.9rem;
+  color: var(--white);
+  font-weight: 400;
+  margin-bottom: 2px;
+}
+
+.about__stack-desc {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  color: var(--gray-400);
+}
+
+.about__proof {
+  padding: 24px;
+  border-left: 2px solid var(--accent);
+  background: var(--gray-900);
+}
+
+.about__proof-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about__proof-line {
+  width: 20px;
+  height: 1px;
+  background: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .about__inner { grid-template-columns: 1fr; }
+}
+</style>

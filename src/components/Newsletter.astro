@@ -1,0 +1,368 @@
+---
+---
+
+<section class="newsletter" id="newsletter">
+  <div class="container newsletter__inner">
+    <div class="newsletter__left">
+      <p class="newsletter__label mono accent">→ The List</p>
+      <h2 class="newsletter__title">
+        One email.<br>
+        <em>Once a week.</em><br>
+        No noise.
+      </h2>
+      <p class="newsletter__sub">
+        Every Sunday: one system, one lesson, one tool. 
+        For people building something real in their business or their life.
+        No filler. No upsells. Just signal.
+      </p>
+
+      <div class="newsletter__proof">
+        <div class="newsletter__proof-row">
+          <span class="newsletter__check">✓</span>
+          <span>One actionable framework per week</span>
+        </div>
+        <div class="newsletter__proof-row">
+          <span class="newsletter__check">✓</span>
+          <span>Early access to all tools and databases</span>
+        </div>
+        <div class="newsletter__proof-row">
+          <span class="newsletter__check">✓</span>
+          <span>Behind-the-scenes: projects, training, experiments</span>
+        </div>
+        <div class="newsletter__proof-row">
+          <span class="newsletter__check">✓</span>
+          <span>First access to the Systems Masterclass</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="newsletter__right">
+      <div class="newsletter__form-wrap">
+        <div class="newsletter__form-label mono">
+          Join the list — it's free, always.
+        </div>
+
+        <form class="newsletter__form" id="newsletterForm">
+          <div class="newsletter__field">
+            <label for="firstName" class="newsletter__field-label mono">First name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Viktor"
+              required
+              class="newsletter__input"
+            />
+          </div>
+          <div class="newsletter__field">
+            <label for="email" class="newsletter__field-label mono">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@yourcompany.com"
+              required
+              class="newsletter__input"
+            />
+          </div>
+
+          <div class="newsletter__toggle-group">
+            <p class="newsletter__toggle-label mono">I'm here for:</p>
+            <div class="newsletter__toggles">
+              <label class="newsletter__toggle">
+                <input type="checkbox" name="interest" value="business" checked />
+                <span>Business & Systems</span>
+              </label>
+              <label class="newsletter__toggle">
+                <input type="checkbox" name="interest" value="life" checked />
+                <span>Life & Resilience</span>
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="newsletter__submit">
+            <span id="submitText">Join the list →</span>
+          </button>
+
+          <p class="newsletter__fine mono">
+            No spam. Unsubscribe anytime. Built on ConvertKit.
+          </p>
+        </form>
+
+        <div class="newsletter__success" id="formSuccess">
+          <div class="newsletter__success-icon">✓</div>
+          <h3>You're in.</h3>
+          <p>Check your inbox — your first issue arrives Sunday.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.newsletter {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--gray-800);
+  background: var(--gray-900);
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter::before {
+  content: '';
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(200, 255, 0, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.newsletter__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 100px);
+  align-items: start;
+}
+
+.newsletter__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.newsletter__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  margin-bottom: 28px;
+}
+
+.newsletter__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.newsletter__sub {
+  font-size: 0.95rem;
+  color: var(--gray-300);
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
+.newsletter__proof {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.newsletter__proof-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.875rem;
+  color: var(--gray-300);
+}
+
+.newsletter__check {
+  color: var(--accent);
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+/* Form */
+.newsletter__form-wrap {
+  background: var(--black);
+  border: 1px solid var(--gray-700);
+  padding: 40px;
+}
+
+.newsletter__form-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 32px;
+  display: block;
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.newsletter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.newsletter__field-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.newsletter__input {
+  background: var(--gray-900);
+  border: 1px solid var(--gray-700);
+  color: var(--white);
+  padding: 12px 16px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.newsletter__input::placeholder {
+  color: var(--gray-600);
+}
+
+.newsletter__input:focus {
+  border-color: var(--accent);
+}
+
+.newsletter__toggle-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.newsletter__toggle-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.newsletter__toggles {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.newsletter__toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: var(--gray-300);
+}
+
+.newsletter__toggle input[type="checkbox"] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--gray-600);
+  background: var(--gray-900);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.newsletter__toggle input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.newsletter__toggle input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: -1px;
+  left: 1px;
+  font-size: 0.6rem;
+  color: var(--black);
+  font-weight: bold;
+}
+
+.newsletter__submit {
+  background: var(--accent);
+  color: var(--black);
+  border: none;
+  padding: 16px 32px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.newsletter__submit:hover {
+  background: var(--white);
+}
+
+.newsletter__fine {
+  font-size: 0.62rem;
+  color: var(--gray-600);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.newsletter__success {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.newsletter__success.visible {
+  display: flex;
+}
+
+.newsletter__success-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+.newsletter__success h3 {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+}
+
+.newsletter__success p {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+}
+
+@media (max-width: 900px) {
+  .newsletter__inner { grid-template-columns: 1fr; }
+}
+</style>
+
+<script>
+const form = document.getElementById('newsletterForm') as HTMLFormElement;
+const formSuccess = document.getElementById('formSuccess');
+const submitText = document.getElementById('submitText');
+
+form?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  if (submitText) submitText.textContent = 'Joining...';
+
+  // Replace this URL with your actual ConvertKit / Mailchimp / Beehiiv form action
+  // For now we simulate success
+  await new Promise(r => setTimeout(r, 900));
+
+  form.style.display = 'none';
+  formSuccess?.classList.add('visible');
+});
+</script>

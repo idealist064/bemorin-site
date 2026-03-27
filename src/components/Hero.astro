@@ -1,0 +1,519 @@
+---
+---
+
+<section class="hero">
+  <div class="hero__bg">
+    <div class="hero__grid"></div>
+    <div class="hero__glow"></div>
+  </div>
+
+  <div class="container hero__inner">
+    <div class="hero__eyebrow">
+      <span class="mono">bemorin.com</span>
+      <span class="hero__dot"></span>
+      <span class="mono">Systems Builder · Data Architect · Ultra Cyclist</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__title-line hero__title-line--1">BUILD</span>
+      <span class="hero__title-line hero__title-line--2">THE SYSTEMS</span>
+      <span class="hero__title-line hero__title-line--3">
+        TO FUEL YOUR <em>DREAMS.</em>
+      </span>
+    </h1>
+
+    <p class="hero__sub">
+      I help entrepreneurs and high-performers architect the tools, habits,<br>
+      and data infrastructure that let them grow — without burning out.
+    </p>
+
+    <div class="hero__actions">
+      <button class="hero__btn hero__btn--primary" id="heroBusiness">
+        <span>My Business</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="hero__btn hero__btn--secondary" id="heroLife">
+        <span>My Life</span>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat">
+        <span class="hero__stat-num">15,000+</span>
+        <span class="hero__stat-label">Bike stores in database</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">1,500km</span>
+        <span class="hero__stat-label">Raid training volume</span>
+      </div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat">
+        <span class="hero__stat-num">5</span>
+        <span class="hero__stat-label">Active projects running</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span class="mono">scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- Choice reveal panels -->
+<div class="choice-reveal" id="choiceReveal">
+  <div class="choice-reveal__panel choice-reveal__panel--business" id="panelBusiness">
+    <button class="choice-reveal__close" id="closeBusiness">✕</button>
+    <div class="container">
+      <p class="choice-reveal__label mono accent">→ Business path</p>
+      <h2 class="choice-reveal__title">How can I help you<br><em>scale your business?</em></h2>
+      <div class="choice-reveal__grid">
+        <a href="#database" class="choice-card">
+          <span class="choice-card__num">01</span>
+          <h3>Access World-Class Data</h3>
+          <p>Get the 15,000 Global Bike Store Database — the gold standard for cycling brands.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#templates" class="choice-card">
+          <span class="choice-card__num">02</span>
+          <h3>Automate your Growth</h3>
+          <p>Download my Agentic AI & Scraping Templates to find leads while you sleep.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#coda" class="choice-card">
+          <span class="choice-card__num">03</span>
+          <h3>Organize your Brand</h3>
+          <p>Use my Free Coda Frameworks to turn your expertise into an authority engine.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#masterclass" class="choice-card choice-card--accent">
+          <span class="choice-card__num">04</span>
+          <h3>The Systems Masterclass</h3>
+          <p>Build your Business OS — from CRM to Performance Tracking. Step by step.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="choice-reveal__panel choice-reveal__panel--life" id="panelLife">
+    <button class="choice-reveal__close" id="closeLife">✕</button>
+    <div class="container">
+      <p class="choice-reveal__label mono accent">→ Life path</p>
+      <h2 class="choice-reveal__title">How can I help you<br><em>reclaim your life?</em></h2>
+      <div class="choice-reveal__grid">
+        <a href="#calendar" class="choice-card">
+          <span class="choice-card__num">01</span>
+          <h3>Master your Time</h3>
+          <p>Get the Big Ass Calendar — the exact system I use to run 5 projects and 1,500km training.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#resilience" class="choice-card">
+          <span class="choice-card__num">02</span>
+          <h3>Build Discipline</h3>
+          <p>Join my 30-Day Resilience Challenges — cold starts, deep work, stoic practice.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#kikiyomi" class="choice-card">
+          <span class="choice-card__num">03</span>
+          <h3>Master a Language</h3>
+          <p>Use the Kikiyomi Method to learn via native immersion (Audio + Text).</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+        <a href="#books" class="choice-card choice-card--accent">
+          <span class="choice-card__num">04</span>
+          <h3>Find Meaning in Chaos</h3>
+          <p>Books & scripts on Logotherapy & Active Nihilism — turn rock bottom into a launchpad.</p>
+          <span class="choice-card__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 120px 0 80px;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(200, 255, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200, 255, 0, 0.04) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
+}
+
+.hero__glow {
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 600px;
+  background: radial-gradient(ellipse, rgba(200, 255, 0, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero__inner {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 32px;
+  animation: fadeUp 0.6s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.hero__title {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-display);
+  font-size: clamp(5rem, 14vw, 14rem);
+  line-height: 0.88;
+  letter-spacing: -0.01em;
+  margin-bottom: 40px;
+}
+
+.hero__title-line {
+  display: block;
+  overflow: hidden;
+}
+
+.hero__title-line--1 {
+  animation: fadeUp 0.7s 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero__title-line--2 {
+  animation: fadeUp 0.7s 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  color: var(--gray-300);
+}
+.hero__title-line--3 {
+  animation: fadeUp 0.7s 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.hero__sub {
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+  color: var(--gray-300);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 48px;
+  animation: fadeUp 0.7s 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+  animation: fadeUp 0.7s 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.hero__btn--primary {
+  background: var(--accent);
+  color: var(--black);
+}
+
+.hero__btn--primary:hover {
+  background: var(--white);
+}
+
+.hero__btn--secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--gray-600);
+}
+
+.hero__btn--secondary:hover {
+  border-color: var(--white);
+}
+
+.hero__stats {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: fadeUp 0.7s 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  flex-wrap: wrap;
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero__stat-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  color: var(--white);
+}
+
+.hero__stat-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+}
+
+.hero__stat-divider {
+  width: 1px;
+  height: 40px;
+  background: var(--gray-700);
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 40px;
+  right: clamp(20px, 5vw, 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  z-index: 1;
+}
+
+.hero__scroll span {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gray-600);
+  writing-mode: vertical-rl;
+}
+
+.hero__scroll-line {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--gray-600), transparent);
+}
+
+/* Choice Reveal */
+.choice-reveal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  pointer-events: none;
+}
+
+.choice-reveal__panel {
+  position: absolute;
+  inset: 0;
+  background: var(--gray-900);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  overflow-y: auto;
+}
+
+.choice-reveal__panel.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}
+
+.choice-reveal__close {
+  position: fixed;
+  top: 28px;
+  right: clamp(20px, 5vw, 60px);
+  background: none;
+  border: 1px solid var(--gray-600);
+  color: var(--gray-300);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: all 0.2s;
+  z-index: 10;
+}
+
+.choice-reveal__close:hover {
+  border-color: var(--white);
+  color: var(--white);
+}
+
+.choice-reveal__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.choice-reveal__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 6rem);
+  line-height: 0.9;
+  margin-bottom: 60px;
+  letter-spacing: -0.01em;
+}
+
+.choice-reveal__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.choice-reveal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2px;
+}
+
+.choice-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  background: var(--gray-800);
+  border: 1px solid var(--gray-700);
+  transition: border-color 0.2s, background 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.choice-card:hover {
+  border-color: var(--gray-500);
+  background: var(--gray-700);
+}
+
+.choice-card--accent {
+  border-color: rgba(200, 255, 0, 0.3);
+}
+
+.choice-card--accent:hover {
+  border-color: var(--accent);
+  background: rgba(200, 255, 0, 0.05);
+}
+
+.choice-card__num {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+}
+
+.choice-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: var(--white);
+}
+
+.choice-card p {
+  font-size: 0.85rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.choice-card__arrow {
+  font-size: 1rem;
+  color: var(--accent);
+  margin-top: 8px;
+  transition: transform 0.2s;
+}
+
+.choice-card:hover .choice-card__arrow {
+  transform: translateX(6px);
+}
+
+@media (max-width: 768px) {
+  .hero__stat-divider { display: none; }
+  .hero__stats { gap: 28px; }
+  .hero__scroll { display: none; }
+}
+</style>
+
+<script>
+const heroBusiness = document.getElementById('heroBusiness');
+const heroLife = document.getElementById('heroLife');
+const panelBusiness = document.getElementById('panelBusiness');
+const panelLife = document.getElementById('panelLife');
+const closeBusiness = document.getElementById('closeBusiness');
+const closeLife = document.getElementById('closeLife');
+const choiceReveal = document.getElementById('choiceReveal');
+
+function openPanel(panel: HTMLElement | null) {
+  if (!panel || !choiceReveal) return;
+  choiceReveal.style.pointerEvents = 'all';
+  panel.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closePanel(panel: HTMLElement | null) {
+  if (!panel || !choiceReveal) return;
+  panel.classList.remove('active');
+  document.body.style.overflow = '';
+  choiceReveal.style.pointerEvents = 'none';
+}
+
+heroBusiness?.addEventListener('click', () => openPanel(panelBusiness));
+heroLife?.addEventListener('click', () => openPanel(panelLife));
+closeBusiness?.addEventListener('click', () => closePanel(panelBusiness));
+closeLife?.addEventListener('click', () => closePanel(panelLife));
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    closePanel(panelBusiness);
+    closePanel(panelLife);
+  }
+});
+</script>
