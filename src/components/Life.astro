@@ -104,6 +104,43 @@
 </section>
 
 <style>
+.section {
+  padding: var(--section-pad) 0;
+  border-top: 1px solid var(--gray-800);
+}
+
+.section__header {
+  max-width: 680px;
+  margin-bottom: 60px;
+}
+
+.section__label {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.section__title em {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
+}
+
+.section__sub {
+  font-size: 0.95rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+
 .life-section {
   background: var(--gray-900);
 }
