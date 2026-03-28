@@ -239,15 +239,21 @@
 }
 
 .hero__question {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  color: var(--gray-400);
-  margin-bottom: 24px;
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.92;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
   animation: fadeUp 0.7s 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.hero__question .accent {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
 }
 
 .hero__question::after {
@@ -256,11 +262,6 @@
   width: 40px;
   background: var(--gray-700);
   display: inline-block;
-}
-
-.hero__question .accent {
-  color: var(--accent);
-  font-weight: 600;
 }
 
 .hero__actions {
