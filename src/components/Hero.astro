@@ -13,15 +13,18 @@
     </div>
 
     <h1 class="hero__title">
-      <span class="hero__title-line hero__title-line--1">SAVE 10+ HOURS</span>
-      <span class="hero__title-line hero__title-line--2">EVERY SINGLE</span>
-      <span class="hero__title-line hero__title-line--3"><em>WEEK.</em></span>
+      <span class="hero__title-line hero__title-line--1"><em>SAVE</em> 10+ HOURS</span>
+      <span class="hero__title-line hero__title-line--3">EVERY WEEK.</span>
     </h1>
 
     <p class="hero__sub">
       I help entrepreneurs and high-performers architect the tools, habits,<br>
       and data infrastructure that let them grow — without burning out.
     </p>
+
+    <div class="hero__question mono">
+      What do you want to <span class="accent">improve</span> today?
+    </div>
 
     <div class="hero__actions">
       <button class="hero__btn hero__btn--primary" id="heroBusiness">
@@ -198,7 +201,7 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-display);
-  font-size: clamp(5rem, 14vw, 14rem);
+  font-size: clamp(5rem, 10vw, 14rem);
   line-height: 0.88;
   letter-spacing: -0.01em;
   margin-bottom: 40px;
@@ -233,6 +236,31 @@
   line-height: 1.7;
   margin-bottom: 48px;
   animation: fadeUp 0.7s 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.hero__question {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray-400);
+  margin-bottom: 24px;
+  animation: fadeUp 0.7s 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero__question::after {
+  content: "";
+  height: 1px;
+  width: 40px;
+  background: var(--gray-700);
+  display: inline-block;
+}
+
+.hero__question .accent {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .hero__actions {
