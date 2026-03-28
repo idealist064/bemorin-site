@@ -23,7 +23,7 @@
     </p>
 
     <div class="hero__question mono">
-      What do you want to <span class="accent">improve</span> today?
+      What do you want to improve today?
     </div>
 
     <div class="hero__actions">
@@ -239,7 +239,9 @@
 }
 
 .hero__question {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--accent);
   font-size: clamp(2.8rem, 5vw, 5rem);
   line-height: 0.92;
   letter-spacing: -0.01em;
@@ -248,12 +250,6 @@
   display: flex;
   align-items: center;
   gap: 12px;
-}
-
-.hero__question .accent {
-  font-family: var(--font-serif);
-  font-style: italic;
-  color: var(--accent);
 }
 
 .hero__question::after {
